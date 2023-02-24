@@ -1,9 +1,14 @@
-<h1>New bookmark</h1>
+<%= render 'header' %>
 
-<%= render "form", bookmark: @bookmark %>
+<div class="container">
+  <div class="">
+    <div class="row new-form">
+      <div class="col-lg-6 left-bg-list">
+      </div>
+      <div class="col-lg-6 right-bg" >
+        <%= render 'form', bookmark: @bookmark %>
+      </div>
+    </div>
+  </div>
 
-<br>
-
-<div>
-  <%= link_to "Back to bookmarks", bookmarks_path %>
 </div>
